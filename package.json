@@ -1,0 +1,17 @@
+{
+  "name": "claudia-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "claudia create --region ap-northeast-1 --api-module api --policies policies",
+    "deploy": "claudia update",
+    "reconfigure": "claudia update --configure-db"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.7.2",
+    "axios": "^0.15.3",
+    "claudia-api-builder": "^2.4.0",
+    "npdynamodb": "^0.2.12"
+  }
+}
